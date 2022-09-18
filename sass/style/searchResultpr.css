@@ -124,7 +124,7 @@ nav i.nav-link a:hover {
   -o-border-radius: 0.5rem;
 }
 
-.sideBarParent .sideBar .btn-toggle[aria-expanded=true] i, .sideBarParent .sideBar a:hover, .search button, .nav a {
+.sideBarParent .sideBar .btn-toggle[aria-expanded=true] i, .sideBarParent .sideBar a:hover, .nav a {
   background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
   background-clip: text;
   -webkit-background-clip: text;
@@ -182,14 +182,25 @@ input:focus {
 .search button {
   border: none;
   outline: none;
+  background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+  color: #fff;
   position: absolute;
-  right: 50px;
+  right: -31px;
   top: 50%;
   transform: translatey(-50%);
   -webkit-transform: translatey(-50%);
   -moz-transform: translatey(-50%);
   -ms-transform: translatey(-50%);
   -o-transform: translatey(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 .sideBarParent {
